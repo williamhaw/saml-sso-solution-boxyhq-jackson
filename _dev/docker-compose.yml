@@ -63,7 +63,7 @@ services:
     volumes:
       - ./docker/libsql:/var/lib/sqld
   cockroachdb:
-    image: cockroachdb/cockroach:v24.3.0
+    image: cockroachdb/cockroach:latest-v25.2
     platform: linux/amd64
     ports:
       - '26257:26257'
