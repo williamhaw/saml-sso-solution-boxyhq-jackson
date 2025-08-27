@@ -22,7 +22,12 @@ module.exports = [{
         "npm/dist",
         "npm/migration",
         "internal-ui/dist",
-        "eslint.config.cjs"
+        "eslint.config.cjs",
+        "node_modules/**",
+        ".next/**",
+        "out/**",
+        "build/**",
+        "next-env.d.ts"
     ],
 }, ...compat.extends(
     "eslint:recommended",
