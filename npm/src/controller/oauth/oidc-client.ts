@@ -7,9 +7,12 @@ import { SSOTrace, SSOTracesInstance } from '../../typings';
 import { dynamicImport, GENERIC_ERR_STRING } from '../utils';
 
 const createCustomFetch = (ssoTraces: { instance: SSOTracesInstance; context: SSOTrace['context'] }) => {
-  return async (url: RequestInfo, options: RequestInit): Promise<Response> => {
+  return async (
+    url: string | URL,
+    options: import('openid-client').CustomFetchOptions
+  ): Promise<Response> => {
     return new Promise((resolve, reject) => {
-      let parsedUrl = new URL(url);
+      let parsedUrl = typeof url === 'string' ? new URL(url) : url;
       const headers = new Headers(options.headers);
 
       // Look for a match to Ory local address, we need to rewrite that to the k8s svc
