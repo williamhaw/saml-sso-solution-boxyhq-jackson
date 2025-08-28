@@ -1,4 +1,4 @@
-import type { ServerMetadata, Configuration } from 'openid-client';
+import type { ServerMetadata, Configuration, CustomFetchOptions } from 'openid-client';
 import * as http from 'http';
 import * as https from 'https';
 import { JacksonError } from '../error';
@@ -7,10 +7,7 @@ import { SSOTrace, SSOTracesInstance } from '../../typings';
 import { dynamicImport, GENERIC_ERR_STRING } from '../utils';
 
 const createCustomFetch = (ssoTraces: { instance: SSOTracesInstance; context: SSOTrace['context'] }) => {
-  return async (
-    url: string | URL,
-    options: import('openid-client').CustomFetchOptions
-  ): Promise<Response> => {
+  return async (url: string | URL, options: CustomFetchOptions): Promise<Response> => {
     return new Promise((resolve, reject) => {
       let parsedUrl = typeof url === 'string' ? new URL(url) : url;
       const headers = new Headers(options.headers);
