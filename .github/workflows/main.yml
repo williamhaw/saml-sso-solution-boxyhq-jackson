@@ -102,7 +102,7 @@ jobs:
           MARIADB_DATABASE: mysql
           MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
       mssql:
-        image: mcr.microsoft.com/azure-sql-edge:2.0.0
+        image: mcr.microsoft.com/mssql/server:2025-latest
         ports:
           - 1433:1433
         env:
