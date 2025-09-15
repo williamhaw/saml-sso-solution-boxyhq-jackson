@@ -101,7 +101,7 @@
     "@playwright/test": "1.55.0",
     "@types/cors": "2.8.19",
     "@types/micromatch": "4.0.9",
-    "@types/node": "22.18.3",
+    "@types/node": "22.18.4",
     "@types/prismjs": "1.26.5",
     "@types/react": "19.1.13",
     "@types/styled-components": "5.1.34",
