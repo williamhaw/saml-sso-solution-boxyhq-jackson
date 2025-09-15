@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "12.1.4",
-    "@types/node": "22.18.1",
-    "@types/react": "19.1.12",
+    "@types/node": "22.18.3",
+    "@types/react": "19.1.13",
     "@typescript-eslint/eslint-plugin": "8.43.0",
     "@typescript-eslint/parser": "8.43.0",
     "@vitejs/plugin-react": "4.7.0",
@@ -40,7 +40,7 @@
     "vite": "6.3.6"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.50.1"
+    "@rollup/rollup-linux-x64-gnu": "4.50.2"
   },
   "peerDependencies": {
     "@boxyhq/react-ui": ">=3.3.42",
