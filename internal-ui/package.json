@@ -33,14 +33,14 @@
     "@vitejs/plugin-react": "4.7.0",
     "eslint": "9.36.0",
     "eslint-plugin-react-hooks": "5.2.0",
-    "eslint-plugin-react-refresh": "0.4.20",
+    "eslint-plugin-react-refresh": "0.4.21",
     "prettier": "3.6.2",
     "react-daisyui": "5.0.5",
     "typescript": "5.9.2",
     "vite": "6.3.6"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.52.0"
+    "@rollup/rollup-linux-x64-gnu": "4.52.2"
   },
   "peerDependencies": {
     "@boxyhq/react-ui": ">=3.3.42",
