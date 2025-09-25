@@ -65,7 +65,7 @@
     "@boxyhq/saml-jackson": "file:npm",
     "@heroicons/react": "2.2.0",
     "@next/bundle-analyzer": "15.5.4",
-    "@tailwindcss/typography": "0.5.18",
+    "@tailwindcss/typography": "0.5.19",
     "axios": "1.12.0",
     "chroma-js": "3.1.2",
     "classnames": "2.5.1",
