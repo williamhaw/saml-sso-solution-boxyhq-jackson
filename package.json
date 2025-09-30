@@ -58,6 +58,9 @@
     "check-locale": "node check-locale.js",
     "format": "prettier --write ."
   },
+  "overrides": {
+    "tar-fs": ">=2.1.4"
+  },
   "dependencies": {
     "@boxyhq/internal-ui": "file:internal-ui",
     "@boxyhq/metrics": "0.2.10",
