@@ -39,6 +39,9 @@ RUN npm run build
 
 # Production image, copy all the files and run next
 FROM $NODEJS_IMAGE AS runner
+
+# Required to get the latest, CVE-free dependencies.
+RUN apk update && apk upgrade
 WORKDIR /app
 
 ENV NODE_OPTIONS="--max-http-header-size=81920 --dns-result-order=ipv4first"
