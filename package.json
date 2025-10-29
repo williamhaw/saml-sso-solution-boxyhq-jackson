@@ -58,12 +58,7 @@
     "check-locale": "node check-locale.js",
     "format": "prettier --write ."
   },
-  "overrides": {
-    "tar-fs": ">=2.1.4",
-    "next-auth": {
-      "nodemailer": ">=7.0.9"
-    }
-  },
+  "overrides": {},
   "dependencies": {
     "@boxyhq/internal-ui": "file:internal-ui",
     "@boxyhq/metrics": "0.2.10",
@@ -83,7 +78,7 @@
     "medium-zoom": "1.1.0",
     "micromatch": "4.0.8",
     "next": "15.5.6",
-    "next-auth": "4.24.11",
+    "next-auth": "4.24.12",
     "next-i18next": "15.4.2",
     "next-mdx-remote": "5.0.0",
     "nodemailer": "7.0.9",
@@ -107,7 +102,7 @@
     "@playwright/test": "1.56.1",
     "@types/cors": "2.8.19",
     "@types/micromatch": "4.0.10",
-    "@types/node": "24.9.1",
+    "@types/node": "24.9.2",
     "@types/prismjs": "1.26.5",
     "@types/react": "19.2.2",
     "@types/styled-components": "5.1.35",
