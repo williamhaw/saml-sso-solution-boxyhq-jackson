@@ -58,7 +58,11 @@
     "check-locale": "node check-locale.js",
     "format": "prettier --write ."
   },
-  "overrides": {},
+  "overrides": {
+    "swagger-jsdoc": {
+      "validator": ">=13.15.20"
+    }
+  },
   "dependencies": {
     "@boxyhq/internal-ui": "file:internal-ui",
     "@boxyhq/metrics": "0.2.10",
