@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, ChangeEvent } from 'react';
 import getRawBody from 'raw-body';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
@@ -144,7 +144,7 @@ const AppSelector = ({
   }, [connection]);
 
   // IdP initiated SSO: Submit the SAMLResponse and idp_hint to the SAML ACS endpoint
-  const appSelected = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const appSelected = (e: ChangeEvent<HTMLInputElement>) => {
     setConnection(e.target.value);
     formRef.current?.submit();
   };

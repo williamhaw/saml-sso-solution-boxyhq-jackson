@@ -1,4 +1,4 @@
-import { useState, type ReactElement } from 'react';
+import { useState, type ReactElement, FormEvent } from 'react';
 import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -47,7 +47,7 @@ const Login = ({
   };
 
   // Handle login with email and password
-  const onEmailPasswordLogin = async (e: React.FormEvent) => {
+  const onEmailPasswordLogin = async (e: FormEvent) => {
     e.preventDefault();
 
     setLoading(true);
@@ -74,7 +74,7 @@ const Login = ({
   };
 
   // Handle login with magic link
-  const onMagicLinkLogin = async (e: React.FormEvent) => {
+  const onMagicLinkLogin = async (e: FormEvent) => {
     e.preventDefault();
 
     if (!email) {
@@ -240,7 +240,7 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
 
   return {
     props: {
-      csrfToken: await getCsrfToken(context),
+      csrfToken: (await getCsrfToken(context)) || null,
       tenant,
       product,
       isMagicLinkEnabled,

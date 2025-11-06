@@ -231,7 +231,7 @@ export interface IOidcDiscoveryController {
 
 export interface OAuthReqBody {
   state: string;
-  response_type: 'code';
+  response_type: 'code' | 'token';
   redirect_uri: string;
   code_challenge: string;
   code_challenge_method: 'plain' | 'S256' | '';
