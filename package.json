@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@boxyhq/internal-ui": "file:internal-ui",
-    "@boxyhq/metrics": "0.2.10",
+    "@boxyhq/metrics": "0.2.11",
     "@boxyhq/react-ui": "3.5.1",
     "@boxyhq/saml-jackson": "file:npm",
     "@heroicons/react": "2.2.0",
@@ -78,7 +78,7 @@
     "cross-env": "10.1.0",
     "daisyui": "4.12.24",
     "formik": "2.4.6",
-    "i18next": "25.6.0",
+    "i18next": "25.6.1",
     "medium-zoom": "1.1.0",
     "micromatch": "4.0.8",
     "next": "16.0.1",
