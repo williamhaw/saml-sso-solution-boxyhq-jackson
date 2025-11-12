@@ -72,7 +72,7 @@
   "devDependencies": {
     "@faker-js/faker": "10.1.0",
     "@types/lodash": "4.17.20",
-    "@types/node": "24.10.0",
+    "@types/node": "24.10.1",
     "@types/sinon": "17.0.4",
     "cross-env": "10.1.0",
     "migrate-mongo": "12.1.3",
@@ -90,6 +90,10 @@
   "overrides": {
     "tap": {
       "tar": ">=7.5.2"
+    },
+    "typeorm": {
+      "mongodb": ">=7.0.0",
+      "mssql": ">=12.1.0"
     }
   }
 }
