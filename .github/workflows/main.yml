@@ -76,7 +76,7 @@ jobs:
         ports:
           - 6379:6379
       mongo:
-        image: mongo:8.2.1
+        image: mongo:8.2.2
         ports:
           - 27017:27017
       planetscale:
