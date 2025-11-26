@@ -43,9 +43,9 @@
     "coverage-map": "map.js"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "3.939.0",
-    "@aws-sdk/credential-providers": "3.939.0",
-    "@aws-sdk/util-dynamodb": "3.939.0",
+    "@aws-sdk/client-dynamodb": "3.940.0",
+    "@aws-sdk/credential-providers": "3.940.0",
+    "@aws-sdk/util-dynamodb": "3.940.0",
     "@boxyhq/error-code-mnemonic": "0.1.1",
     "@boxyhq/metrics": "0.2.11",
     "@boxyhq/saml20": "1.12.2",
@@ -60,7 +60,7 @@
     "mongodb": "7.0.0",
     "mssql": "12.1.1",
     "mysql2": "3.15.3",
-    "node-forge": "1.3.1",
+    "node-forge": "1.3.2",
     "openid-client": "6.8.1",
     "pg": "8.16.3",
     "redis": "4.7.1",
@@ -78,7 +78,7 @@
     "migrate-mongo": "12.1.3",
     "nock": "14.0.10",
     "sinon": "21.0.0",
-    "tap": "21.1.6",
+    "tap": "21.3.0",
     "ts-node": "10.9.2",
     "tsconfig-paths": "4.2.0",
     "typescript": "5.9.3"
