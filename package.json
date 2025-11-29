@@ -102,7 +102,7 @@
     "remark-gfm": "4.0.1",
     "sharp": "0.34.5",
     "styled-components": "6.1.19",
-    "swr": "2.3.6"
+    "swr": "2.3.7"
   },
   "devDependencies": {
     "@playwright/test": "1.57.0",
@@ -123,7 +123,7 @@
     "globals": "16.5.0",
     "jose": "6.1.2",
     "postcss": "8.5.6",
-    "prettier": "3.7.1",
+    "prettier": "3.7.2",
     "prettier-plugin-tailwindcss": "0.7.1",
     "release-it": "19.0.6",
     "swagger-jsdoc": "6.2.8",
