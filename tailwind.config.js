@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './ee/**/*.{js,ts,jsx,tsx}',
     'node_modules/daisyui/dist/**/*.js',
-    'node_modules/react-daisyui/dist/**/*.js',
+    'node_modules/rsc-daisyui/dist/**/*.js',
     './internal-ui/src/**/*.{js,ts,jsx,tsx}',
   ],
   daisyui: {

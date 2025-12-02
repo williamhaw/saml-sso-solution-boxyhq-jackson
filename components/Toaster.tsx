@@ -1,5 +1,5 @@
 import { useState, useEffect, Dispatch, SetStateAction } from 'react';
-import { Alert, Button, Toast } from 'react-daisyui';
+import { Alert, Button, Toast } from 'rsc-daisyui';
 
 type ToastItem = {
   text: string;
@@ -27,10 +27,10 @@ export const Toaster = () => {
           if (!toast) return null;
 
           return (
-            <Alert key={`toast-${index}`} status={toast.status} className='rounded py-3'>
+            <Alert key={`toast-${index}`} color={toast.status} className='rounded py-3'>
               <h3>{toast.text}</h3>
               <Button
-                color='ghost'
+                ghost={true}
                 onClick={() =>
                   setToasts({
                     success: toast.status === 'success' ? undefined : toasts.success,

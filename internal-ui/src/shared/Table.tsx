@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import { Button } from 'react-daisyui';
+import { Button } from 'rsc-daisyui';
 import { useTranslation } from 'next-i18next';
 import { Badge } from './Badge';
 
@@ -78,7 +78,7 @@ const TableBody = ({
                             key={row.id + '-button-' + index}
                             size='xs'
                             color={button.color}
-                            variant='outline'
+                            outline={true}
                             onClick={button.onClick}>
                             {button.text}
                           </Button>

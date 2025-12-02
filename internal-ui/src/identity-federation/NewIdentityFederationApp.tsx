@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import TagsInput from 'react-tagsinput';
-import { Card, Button } from 'react-daisyui';
+import { Card, Button } from 'rsc-daisyui';
 import { useTranslation } from 'next-i18next';
 import type { IdentityFederationApp } from '../types';
 import QuestionMarkCircleIcon from '@heroicons/react/24/outline/QuestionMarkCircleIcon';
@@ -255,7 +255,7 @@ export const NewIdentityFederationApp = ({
             <Button
               type='submit'
               className='btn btn-primary btn-md'
-              loading={formik.isSubmitting}
+              animation={formik.isSubmitting}
               disabled={!formik.dirty || !formik.isValid}>
               {t('bui-fs-create-app-btn')}
             </Button>
